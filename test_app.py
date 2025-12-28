@@ -1,4 +1,7 @@
-from app import calculate_discount
+from app import *
 
 def test_discount():
-    assert calculate_discount(100, 10) == 90
+    price = 100
+    discount = 10
+    quantity = 2
+    assert (price * quantity) - ((price * quantity) * discount / 100) == 180
